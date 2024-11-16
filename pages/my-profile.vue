@@ -11,14 +11,17 @@
     </div>
 
     <!-- Profile Section -->
-    <div v-if="user" class="profile-card">
-      <h2 class="profile-name">{{ user.name }}</h2>
-      <p class="profile-email">{{ user.email }}</p>
-      <p class="profile-location">Location: {{ user.location }}</p>
-      <p class="profile-age">Age: {{ user.age }}</p>
-      <p class="profile-rating">Rating: {{ user.rating }}</p>
-      <p class="profile-activity">Activity: {{ user.activity }}</p>
-      <div class="profile-friends">
+    <div v-if="user" class="flex flex-row justify-center">
+      <div ><img class="w-[200px]" src="https://freesvg.org/img/abstract-user-flat-3.png"></div>
+      <div class="">
+        <h2 class="profile-name">{{ user.name }}</h2>
+        <p class="profile-email">{{ user.email }}</p>
+        <p class="profile-location">Location: {{ user.location }}</p>
+        <p class="profile-age">Age: {{ user.age }}</p>
+        <p class="profile-rating">Rating: {{ user.rating }}</p>
+        <p class="profile-activity">Activity: {{ user.activity }}</p>
+        <div class="profile-friends">
+      </div>
         <h3>Friends</h3>
         <ul>
           <li v-for="friend in friends" :key="friends">

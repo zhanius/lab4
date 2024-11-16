@@ -15,7 +15,7 @@
       <div v-for="chat in chats" :key="chat.ID" class="chat-item">
         <p class="chat-name">{{ chat.receiver.name }}</p>
         <small class="chat-timestamp">{{ formatTimestamp(chat.receiver.activity) }}</small>
-        <router-link :to="`/chats/${chat.ID}`" class="view-chat">View</router-link>
+        <router-link :to="`/favorites/${chat.ID}`" class="view-chat">View</router-link>
       </div>
     </div>
   </div>
