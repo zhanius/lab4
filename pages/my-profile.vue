@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="bg-gradient-to-r from-lime-300 to-lime-600 w-full min-h-screen">
     <!-- Loading State -->
     <div v-if="!user && !error" class="loading">
       <p>Loading profile...</p>
