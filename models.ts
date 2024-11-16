@@ -34,3 +34,26 @@ export interface User {
     rating: number;
     activity: string;
 }
+
+export interface Chat {
+    chat_id: number;
+    messages: Message[];
+    receiver_id: number;
+    sender_id: number;
+}
+
+export interface Chats {
+    id: number;
+    receiver_id: number;
+    sender_id: number;
+    my_id: number;
+}
+
+export interface Message {
+    id: number;
+    receiver_id: number;
+    sender_id: number;
+    content: string;
+    timestamp: string;
+    chat_id: number;
+}
